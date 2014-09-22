@@ -2,15 +2,19 @@
 How to compile your .java using an external jar:
 (This assumes the .java file has 'package com.my.somepkg' at the top.)
 
-Assume /home/user/code/java/ExternalJar is the "root" directory of this project.
+* Assume /home/user/code/java/ExternalJar is the "root" directory of 
+  this project.
 
-To compile .java:
-javac -cp ".;C:\cygwin\home\user\bin\junit4.10\junit-4.10.jar"
-com/my/somepkg/MyTestRunner.java
+* Aalso assumes you have file junit-4.10.jar located in 
+  C:\cygwin\home\user\bin\junit4.10\ directory
 
-To run .class:
-java -cp ".;C:\cygwin\home\user\bin\junit4.10\junit-4.10.jar"
-com.my.somepkg.MyTestRunner
+1) Go to "root" directory of your project.
+
+2) To compile .java:
+   javac -cp ".;C:\cygwin\home\user\bin\junit4.10\junit-4.10.jar" com/my/somepkg/MyTestRunner.java
+
+3) To run .class:
+   java -cp ".;C:\cygwin\home\user\bin\junit4.10\junit-4.10.jar" com.my.somepkg.MyTestRunner
 
 If not package is specified, then it assumes current directory. 
 And you can omitt path to .java and .class files respectively.
@@ -25,6 +29,4 @@ Note:
 * You don't have to be in "root" directory to compile .java , but you have 
   to be in "root" directory to run .class file.
 * In Linux, you need to use : (semicolon) and / (forwardslash) respectively
-* This also assumes you have file junit-4.10.jar located in 
-  C:\cygwin\home\user\bin\junit4.10\ directory
 ```
