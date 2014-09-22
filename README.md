@@ -17,10 +17,13 @@ How to compile your .java using an external jar:
    java -cp ".;C:\cygwin\home\user\bin\junit4.10\junit-4.10.jar" com.my.somepkg.MyTestRunner
 
 If not package is specified, then it assumes current directory. 
-And you can omitt path to .java and .class files respectively.
+Then you can omitt path to .java and .class files respectively.
 
-javac ...same as above... MyTestRunner.java
-java ...same as above... MyTestRunner
+1) Go to directory where .java file are located.
+
+2) javac ...same as above... MyTestRunner.java
+
+3) java ...same as above... MyTestRunner
 
 
 Note:
