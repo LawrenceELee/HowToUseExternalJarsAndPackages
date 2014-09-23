@@ -17,6 +17,8 @@ How to compile your .java using an external jar:
 3) To run .class:
    java -cp ".;C:\cygwin\home\user\bin\junit4.10\junit-4.10.jar" com.my.somepkg.MyTestRunner
 
+Note: the usage of . (dots) in the class name when running.
+
 If package is not specified, then it assumes current directory. 
 Then you can omitt path to .java and .class files respectively.
 
