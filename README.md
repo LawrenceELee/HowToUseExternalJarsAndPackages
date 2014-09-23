@@ -37,4 +37,8 @@ Note:
 * In Linux, you need to use : (semicolon) and / (forwardslash) respectively
 * '-cp <path>' can be omitted if specified in the CLASSPATH 
   system/envirmonment variable.
+* If you have multiple jars to list in the classpath and they are all in the
+  directory, you can use classpath wildcards (ex. "Test.jar;lib/*")
+  Note the use of double quotes to surround classpath, and * not *.jar
+  reference: http://stackoverflow.com/q/219585
 ```
