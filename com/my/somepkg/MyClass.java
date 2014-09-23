@@ -1,4 +1,4 @@
-//package com.my.somepkg;
+package com.my.somepkg;
 
 public class MyClass {
     public int multiply(int x, int y) {
